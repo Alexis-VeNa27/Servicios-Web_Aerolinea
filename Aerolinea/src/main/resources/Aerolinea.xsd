@@ -1,31 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" 
-targetNamespace="http://www.example.org/Aerolinea" 
-xmlns:tns="http://www.example.org/Aerolinea" 
-elementFormDefault="qualified">
-
+ targetNamespace="http://www.example.org/Aerolinea" 
+ xmlns:tns="http://www.example.org/Aerolinea" 
+ elementFormDefault="qualified">
+ 
 	<element name="AgregarVueloRequest">
 		<complexType>
 			<sequence>
-				<element name="idVuelo" type="int"></element>
-				<element name="origen" type="string"></element>
-				<element name="destino" type="string"></element>
-				<element name="hora" type="string"></element>
-				<element name="fecha" type="string"></element>
-				<element name="precio" type="int"></element>				
+				<element name="agregar" type="string"></element>
 			</sequence>
 		</complexType>
 	</element>
 	<element name="AgregarVueloResponse">
 		<complexType>
-			<sequence>								
-				<element name="mensaje"></element>
-				<element name="idVuelo"></element>
-				<element name="origen"></element>
-				<element name="destino"></element>
-				<element name="hora"></element>
-				<element name="fecha"></element>
-				<element name="precio"></element>				
+			<sequence>
+				<element name="respuesta1"></element>
 			</sequence>
 		</complexType>
 	</element>
@@ -33,45 +22,29 @@ elementFormDefault="qualified">
 	<element name="MostrarVueloRequest">
 		<complexType>
 			<sequence>
-				<element name="idVuelo" type="int"></element>
+				<element name="mostrar" type="string"></element>
 			</sequence>
 		</complexType>
 	</element>
 	<element name="MostrarVueloResponse">
 		<complexType>
 			<sequence>
-				<element name="mensaje"></element>
-				<element name="idVuelo"></element>
-				<element name="origen"></element>
-				<element name="destino"></element>
-				<element name="hora"></element>
-				<element name="fecha"></element>
-				<element name="precio"></element>				
+				<element name="respuesta2"></element>
 			</sequence>
 		</complexType>
 	</element>
 	
 	<element name="ModificarVueloRequest">
 		<complexType>
-			<sequence>				
-				<element name="origen" type="string"></element>
-				<element name="destino" type="string"></element>
-				<element name="hora" type="string"></element>
-				<element name="fecha" type="string"></element>
-				<element name="precio" type="int"></element>
+			<sequence>
+				<element name="modificar" type="string"></element>
 			</sequence>
 		</complexType>
 	</element>
 	<element name="ModificarVueloResponse">
 		<complexType>
 			<sequence>
-				<element name="mensaje"></element>
-				<element name="idVuelo"></element>
-				<element name="origen"></element>
-				<element name="destino"></element>
-				<element name="hora"></element>
-				<element name="fecha"></element>
-				<element name="precio"></element>				
+				<element name="respuesta3"></element>
 			</sequence>
 		</complexType>
 	</element>
@@ -79,106 +52,46 @@ elementFormDefault="qualified">
 	<element name="EliminarVueloRequest">
 		<complexType>
 			<sequence>
-				<element name="idVuelo" type="int"></element>
+				<element name="eliminar" type="string"></element>
 			</sequence>
 		</complexType>
 	</element>
 	<element name="EliminarVueloResponse">
 		<complexType>
 			<sequence>
-				<element name="mensaje"></element>
-				<element name="idVuelo"></element>
-				<element name="origen"></element>
-				<element name="destino"></element>
-				<element name="hora"></element>
-				<element name="fecha"></element>
-				<element name="precio"></element>				
+				<element name="respuesta4"></element>
 			</sequence>
 		</complexType>
 	</element>
 	
-	<element name="RealizarCompraRequest">
+	<element name="ComprarBoletoRequest">
 		<complexType>
 			<sequence>
-				<element name="idVuelo" type="int"></element>
-				<element name="nomCliente" type="string"></element>
-				<element name="metodoPago" type="string"></element>
+				<element name="comprar" type="string"></element>
 			</sequence>
 		</complexType>
 	</element>
-	<element name="RealizarCompraResponse">
+	<element name="ComprarBoletoResponse">
 		<complexType>
 			<sequence>
-				<element name="mensaje"></element>
-				<element name="idCompra"></element>
-				<element name="idVuelo"></element>
-				<element name="nomCliente"></element>
-				<element name="metodoPago"></element>
-				<element name="asiento"></element>				
+				<element name="respuesta5"></element>
 			</sequence>
 		</complexType>
 	</element>
 	
-	<element name="MostrarCompraRequest">
+	<element name="ComprobanteCompraRequest">
 		<complexType>
 			<sequence>
-				<element name="idCompra" type="int"></element>
+				<element name="comprobante" type="string"></element>
 			</sequence>
 		</complexType>
 	</element>
-	<element name="MostrarCompraResponse">
+	<element name="ComprobanteCompraResponse">
 		<complexType>
 			<sequence>
-				<element name="mensaje"></element>
-				<element name="idCompra"></element>
-				<element name="idVuelo"></element>
-				<element name="nomCliente"></element>
-				<element name="metodoPago"></element>
-				<element name="asiento"></element>				
+				<element name="respuesta6"></element>
 			</sequence>
 		</complexType>
-	</element>
-	
-	<element name="ModificarCompraRequest">
-		<complexType>
-			<sequence>				
-				<element name="idVuelo" type="int"></element>
-				<element name="nomCliente" type="string"></element>
-				<element name="metodoPago" type="string"></element>
-				<element name="asiento" type="string"></element>
-			</sequence>
-		</complexType>
-	</element>
-	<element name="ModificarCompraResponse">
-		<complexType>
-			<sequence>
-				<element name="mensaje"></element>
-				<element name="idCompra"></element>
-				<element name="idVuelo"></element>
-				<element name="nomCliente"></element>
-				<element name="metodoPago"></element>
-				<element name="asiento"></element>				
-			</sequence>
-		</complexType>
-	</element>
-	
-	<element name="CancelarCompraRequest">
-		<complexType>
-			<sequence>
-				<element name="idCompra" type="int"></element>
-			</sequence>
-		</complexType>
-	</element>
-	<element name="CancelarCompraResponse">
-		<complexType>
-			<sequence>
-				<element name="mensaje"></element>
-				<element name="idCompra"></element>
-				<element name="idVuelo"></element>
-				<element name="nomCliente"></element>
-				<element name="metodoPago"></element>
-				<element name="asiento"></element>				
-			</sequence>
-		</complexType>
-	</element>
+	</element>	
+ 
 </schema>

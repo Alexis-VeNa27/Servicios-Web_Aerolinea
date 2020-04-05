@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.2.7 
 // Visite <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2020.04.05 a las 12:21:26 AM CST 
+// Generado el: 2020.03.25 a las 07:10:32 PM CST 
 //
 
 
@@ -53,51 +53,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ModificarCompraRequest }
+     * Create an instance of {@link ComprobanteCompraRequest }
      * 
      */
-    public ModificarCompraRequest createModificarCompraRequest() {
-        return new ModificarCompraRequest();
+    public ComprobanteCompraRequest createComprobanteCompraRequest() {
+        return new ComprobanteCompraRequest();
     }
 
     /**
-     * Create an instance of {@link MostrarCompraRequest }
+     * Create an instance of {@link ComprobanteCompraResponse }
      * 
      */
-    public MostrarCompraRequest createMostrarCompraRequest() {
-        return new MostrarCompraRequest();
-    }
-
-    /**
-     * Create an instance of {@link ModificarCompraResponse }
-     * 
-     */
-    public ModificarCompraResponse createModificarCompraResponse() {
-        return new ModificarCompraResponse();
-    }
-
-    /**
-     * Create an instance of {@link ModificarVueloResponse }
-     * 
-     */
-    public ModificarVueloResponse createModificarVueloResponse() {
-        return new ModificarVueloResponse();
-    }
-
-    /**
-     * Create an instance of {@link MostrarCompraResponse }
-     * 
-     */
-    public MostrarCompraResponse createMostrarCompraResponse() {
-        return new MostrarCompraResponse();
-    }
-
-    /**
-     * Create an instance of {@link CancelarCompraRequest }
-     * 
-     */
-    public CancelarCompraRequest createCancelarCompraRequest() {
-        return new CancelarCompraRequest();
+    public ComprobanteCompraResponse createComprobanteCompraResponse() {
+        return new ComprobanteCompraResponse();
     }
 
     /**
@@ -125,11 +93,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link RealizarCompraResponse }
+     * Create an instance of {@link ComprarBoletoResponse }
      * 
      */
-    public RealizarCompraResponse createRealizarCompraResponse() {
-        return new RealizarCompraResponse();
+    public ComprarBoletoResponse createComprarBoletoResponse() {
+        return new ComprarBoletoResponse();
     }
 
     /**
@@ -141,6 +109,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link ModificarVueloResponse }
+     * 
+     */
+    public ModificarVueloResponse createModificarVueloResponse() {
+        return new ModificarVueloResponse();
+    }
+
+    /**
      * Create an instance of {@link EliminarVueloRequest }
      * 
      */
@@ -149,19 +125,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CancelarCompraResponse }
+     * Create an instance of {@link ComprarBoletoRequest }
      * 
      */
-    public CancelarCompraResponse createCancelarCompraResponse() {
-        return new CancelarCompraResponse();
-    }
-
-    /**
-     * Create an instance of {@link RealizarCompraRequest }
-     * 
-     */
-    public RealizarCompraRequest createRealizarCompraRequest() {
-        return new RealizarCompraRequest();
+    public ComprarBoletoRequest createComprarBoletoRequest() {
+        return new ComprarBoletoRequest();
     }
 
 }
