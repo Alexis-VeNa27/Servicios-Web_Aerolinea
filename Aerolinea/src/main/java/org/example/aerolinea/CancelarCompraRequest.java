@@ -24,7 +24,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="idVuelo" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="idCompra" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -35,27 +35,27 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "idVuelo"
+    "idCompra"
 })
-@XmlRootElement(name = "EliminarVueloRequest")
-public class EliminarVueloRequest {
+@XmlRootElement(name = "CancelarCompraRequest")
+public class CancelarCompraRequest {
 
-    protected int idVuelo;
+    protected int idCompra;
 
     /**
-     * Obtiene el valor de la propiedad idVuelo.
+     * Obtiene el valor de la propiedad idCompra.
      * 
      */
-    public int getIdVuelo() {
-        return idVuelo;
+    public int getIdCompra() {
+        return idCompra;
     }
 
     /**
-     * Define el valor de la propiedad idVuelo.
+     * Define el valor de la propiedad idCompra.
      * 
      */
-    public void setIdVuelo(int value) {
-        this.idVuelo = value;
+    public void setIdCompra(int value) {
+        this.idCompra = value;
     }
 
 }

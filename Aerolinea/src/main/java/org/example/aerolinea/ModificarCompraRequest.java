@@ -26,11 +26,9 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="idVuelo" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="origen" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="destino" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="hora" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="fecha" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="precio" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="nomCliente" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="metodoPago" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="asiento" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -42,25 +40,20 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
     "idVuelo",
-    "origen",
-    "destino",
-    "hora",
-    "fecha",
-    "precio"
+    "nomCliente",
+    "metodoPago",
+    "asiento"
 })
-@XmlRootElement(name = "AgregarVueloRequest")
-public class AgregarVueloRequest {
+@XmlRootElement(name = "ModificarCompraRequest")
+public class ModificarCompraRequest {
 
     protected int idVuelo;
     @XmlElement(required = true)
-    protected String origen;
+    protected String nomCliente;
     @XmlElement(required = true)
-    protected String destino;
+    protected String metodoPago;
     @XmlElement(required = true)
-    protected String hora;
-    @XmlElement(required = true)
-    protected String fecha;
-    protected int precio;
+    protected String asiento;
 
     /**
      * Obtiene el valor de la propiedad idVuelo.
@@ -79,115 +72,75 @@ public class AgregarVueloRequest {
     }
 
     /**
-     * Obtiene el valor de la propiedad origen.
+     * Obtiene el valor de la propiedad nomCliente.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getOrigen() {
-        return origen;
+    public String getNomCliente() {
+        return nomCliente;
     }
 
     /**
-     * Define el valor de la propiedad origen.
+     * Define el valor de la propiedad nomCliente.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setOrigen(String value) {
-        this.origen = value;
+    public void setNomCliente(String value) {
+        this.nomCliente = value;
     }
 
     /**
-     * Obtiene el valor de la propiedad destino.
+     * Obtiene el valor de la propiedad metodoPago.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getDestino() {
-        return destino;
+    public String getMetodoPago() {
+        return metodoPago;
     }
 
     /**
-     * Define el valor de la propiedad destino.
+     * Define el valor de la propiedad metodoPago.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setDestino(String value) {
-        this.destino = value;
+    public void setMetodoPago(String value) {
+        this.metodoPago = value;
     }
 
     /**
-     * Obtiene el valor de la propiedad hora.
+     * Obtiene el valor de la propiedad asiento.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getHora() {
-        return hora;
+    public String getAsiento() {
+        return asiento;
     }
 
     /**
-     * Define el valor de la propiedad hora.
+     * Define el valor de la propiedad asiento.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setHora(String value) {
-        this.hora = value;
-    }
-
-    /**
-     * Obtiene el valor de la propiedad fecha.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getFecha() {
-        return fecha;
-    }
-
-    /**
-     * Define el valor de la propiedad fecha.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setFecha(String value) {
-        this.fecha = value;
-    }
-
-    /**
-     * Obtiene el valor de la propiedad precio.
-     * 
-     */
-    public int getPrecio() {
-        return precio;
-    }
-
-    /**
-     * Define el valor de la propiedad precio.
-     * 
-     */
-    public void setPrecio(int value) {
-        this.precio = value;
+    public void setAsiento(String value) {
+        this.asiento = value;
     }
 
 }

@@ -26,12 +26,11 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="mensaje" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
+ *         &lt;element name="idCompra" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
  *         &lt;element name="idVuelo" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
- *         &lt;element name="origen" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
- *         &lt;element name="destino" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
- *         &lt;element name="hora" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
- *         &lt;element name="fecha" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
- *         &lt;element name="precio" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
+ *         &lt;element name="nomCliente" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
+ *         &lt;element name="metodoPago" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
+ *         &lt;element name="asiento" type="{http://www.w3.org/2001/XMLSchema}anyType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -43,30 +42,27 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
     "mensaje",
+    "idCompra",
     "idVuelo",
-    "origen",
-    "destino",
-    "hora",
-    "fecha",
-    "precio"
+    "nomCliente",
+    "metodoPago",
+    "asiento"
 })
-@XmlRootElement(name = "MostrarVueloResponse")
-public class MostrarVueloResponse {
+@XmlRootElement(name = "ModificarCompraResponse")
+public class ModificarCompraResponse {
 
     @XmlElement(required = true)
     protected Object mensaje;
     @XmlElement(required = true)
+    protected Object idCompra;
+    @XmlElement(required = true)
     protected Object idVuelo;
     @XmlElement(required = true)
-    protected Object origen;
+    protected Object nomCliente;
     @XmlElement(required = true)
-    protected Object destino;
+    protected Object metodoPago;
     @XmlElement(required = true)
-    protected Object hora;
-    @XmlElement(required = true)
-    protected Object fecha;
-    @XmlElement(required = true)
-    protected Object precio;
+    protected Object asiento;
 
     /**
      * Obtiene el valor de la propiedad mensaje.
@@ -90,6 +86,30 @@ public class MostrarVueloResponse {
      */
     public void setMensaje(Object value) {
         this.mensaje = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad idCompra.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Object }
+     *     
+     */
+    public Object getIdCompra() {
+        return idCompra;
+    }
+
+    /**
+     * Define el valor de la propiedad idCompra.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Object }
+     *     
+     */
+    public void setIdCompra(Object value) {
+        this.idCompra = value;
     }
 
     /**
@@ -117,123 +137,75 @@ public class MostrarVueloResponse {
     }
 
     /**
-     * Obtiene el valor de la propiedad origen.
+     * Obtiene el valor de la propiedad nomCliente.
      * 
      * @return
      *     possible object is
      *     {@link Object }
      *     
      */
-    public Object getOrigen() {
-        return origen;
+    public Object getNomCliente() {
+        return nomCliente;
     }
 
     /**
-     * Define el valor de la propiedad origen.
+     * Define el valor de la propiedad nomCliente.
      * 
      * @param value
      *     allowed object is
      *     {@link Object }
      *     
      */
-    public void setOrigen(Object value) {
-        this.origen = value;
+    public void setNomCliente(Object value) {
+        this.nomCliente = value;
     }
 
     /**
-     * Obtiene el valor de la propiedad destino.
+     * Obtiene el valor de la propiedad metodoPago.
      * 
      * @return
      *     possible object is
      *     {@link Object }
      *     
      */
-    public Object getDestino() {
-        return destino;
+    public Object getMetodoPago() {
+        return metodoPago;
     }
 
     /**
-     * Define el valor de la propiedad destino.
+     * Define el valor de la propiedad metodoPago.
      * 
      * @param value
      *     allowed object is
      *     {@link Object }
      *     
      */
-    public void setDestino(Object value) {
-        this.destino = value;
+    public void setMetodoPago(Object value) {
+        this.metodoPago = value;
     }
 
     /**
-     * Obtiene el valor de la propiedad hora.
+     * Obtiene el valor de la propiedad asiento.
      * 
      * @return
      *     possible object is
      *     {@link Object }
      *     
      */
-    public Object getHora() {
-        return hora;
+    public Object getAsiento() {
+        return asiento;
     }
 
     /**
-     * Define el valor de la propiedad hora.
+     * Define el valor de la propiedad asiento.
      * 
      * @param value
      *     allowed object is
      *     {@link Object }
      *     
      */
-    public void setHora(Object value) {
-        this.hora = value;
-    }
-
-    /**
-     * Obtiene el valor de la propiedad fecha.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Object }
-     *     
-     */
-    public Object getFecha() {
-        return fecha;
-    }
-
-    /**
-     * Define el valor de la propiedad fecha.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Object }
-     *     
-     */
-    public void setFecha(Object value) {
-        this.fecha = value;
-    }
-
-    /**
-     * Obtiene el valor de la propiedad precio.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Object }
-     *     
-     */
-    public Object getPrecio() {
-        return precio;
-    }
-
-    /**
-     * Define el valor de la propiedad precio.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Object }
-     *     
-     */
-    public void setPrecio(Object value) {
-        this.precio = value;
+    public void setAsiento(Object value) {
+        this.asiento = value;
     }
 
 }
