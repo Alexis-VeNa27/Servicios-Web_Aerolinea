@@ -14,8 +14,8 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
   - [Funcionalidades](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#funcionalidades-)
   - [Diagrama De Clases](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#diagrama-de-clases-)
 - [Versión 3]()
-  - [Request & Response]()
-  - [Ejemplo de peticiones]()
+  - [Request & Response](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#request--response-)
+  - [Ejemplo de peticiones](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#request--response-)
 
 
 
