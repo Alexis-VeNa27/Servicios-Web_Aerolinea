@@ -6,7 +6,7 @@ elementFormDefault="qualified">
 
 	<element name="AgregarVueloRequest">
 		<complexType>
-			<sequence>
+			<sequence>				
 				<element name="idVuelo" type="int"></element>
 				<element name="origen" type="string"></element>
 				<element name="destino" type="string"></element>
