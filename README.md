@@ -744,7 +744,7 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 
 
-![](C:\Users\navaj\Documents\Tecnologias Para La Integracion De Soluciones\Proyecto Aerolinea\Diagramas\CasosDeUso.png)
+![](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/Diagramas_Aerolinea/CasosDeUso.png?raw=true)
 
 
 
@@ -754,7 +754,7 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 
 
-![](C:\Users\navaj\Documents\Tecnologias Para La Integracion De Soluciones\Proyecto Aerolinea\Diagramas\DiagramaDeActividad.png)
+![](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/Diagramas_Aerolinea/DiagramaDeActividad.png?raw=true)
 
 
 
@@ -764,7 +764,7 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 
 
-![](C:\Users\navaj\Documents\Tecnologias Para La Integracion De Soluciones\Proyecto Aerolinea\Diagramas\DiagramaDeComponentes.png)
+![](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/Diagramas_Aerolinea/DiagramaDeComponentes.png?raw=true)
 
 
 
@@ -774,7 +774,7 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 
 
-![](C:\Users\navaj\Documents\Tecnologias Para La Integracion De Soluciones\Proyecto Aerolinea\Diagramas\DiagramaDeClases.png)
+![](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/Diagramas_Aerolinea/DiagramaDeClases.png?raw=true)
 
 
 
@@ -784,7 +784,7 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 
 
-![](C:\Users\navaj\Documents\Tecnologias Para La Integracion De Soluciones\Proyecto Aerolinea\Diagramas\DiagramaDeSecuencia.png)
+![](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/Diagramas_Aerolinea/DiagramaDeSecuencia.png?raw=true)
 
 
 
