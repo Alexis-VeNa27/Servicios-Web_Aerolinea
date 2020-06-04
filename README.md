@@ -78,6 +78,7 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 - [x] Mostrar Compra
 - [x] Modificar Compra
 - [x] Cancelar Compra
+- [x] Buscar Vuelos
 
 ------
 
@@ -196,9 +197,9 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 **Datos que recibe**
 
-| **VARIABLE** |    **DESCRIPCION**     |
-| :----------: | :--------------------: |
-|  `idVuelo`   | *int* -> Numero Entero |
+| **VARIABLE** | **DESCRIPCION** |
+| :----------: | :-------------: |
+|              |                 |
 
 **Datos que devuelve**
 
@@ -214,7 +215,28 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 ------
 
+- Buscar Vuelos
 
+**Datos que recibe**
+
+| **VARIABLE** |    **DESCRIPCION**     |
+| :----------: | :--------------------: |
+|  `idVuelo`   | *int* -> Numero Entero |
+
+**Datos que devuelve**
+
+`¡ Lista de Vuelos de La Aerolínea !`
+
+| **VARIABLE** |                  **DESCRIPCION**                   |
+| :----------: | :------------------------------------------------: |
+|  `idVuelo`   |               *int* -> Numero Entero               |
+|   `origen`   |            *string* -> Ciudad De Origen            |
+|  `destino`   |           *string* -> Ciudad De Destino            |
+|    `hora`    |    *string* -> Hora Del Vuelo (Formato: 24 hrs)    |
+|   `fecha`    | *string* -> Fecha Del Vuelo (Formato: Dia/Mes/Año) |
+|   `precio`   |               *int* -> Numero Entero               |
+
+------
 
 `Compra`
 
@@ -506,6 +528,44 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
         <ns2:EliminarVueloResponse xmlns:ns2="http://www.example.org/Aerolinea">
             <ns2:mensaje xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">El Vuelo: 800 No Existe !</ns2:mensaje>
         </ns2:EliminarVueloResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+```
+
+------
+
+`Buscar Vuelos`
+
+```xml
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <BuscarVuelosRequest xmlns="http://www.example.org/Aerolinea"/>
+    </Body>
+</Envelope>
+```
+
+```xml
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+        <ns2:BuscarVuelosResponse xmlns:ns2="http://www.example.org/Aerolinea">
+            <ns2:vuelos>
+                <ns2:idVuelo xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ID_VUELO: 1</ns2:idVuelo>
+                <ns2:origen xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ORIGEN: Puebla</ns2:origen>
+                <ns2:destino xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">DESTINO: Guadalajara</ns2:destino>
+                <ns2:hora xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">HORA: 12:00</ns2:hora>
+                <ns2:fecha xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">FECHA: 2020-09-19</ns2:fecha>
+                <ns2:precio xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">PRECIO: 2000</ns2:precio>
+            </ns2:vuelos>
+            <ns2:vuelos>
+                <ns2:idVuelo xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ID_VUELO: 2</ns2:idVuelo>
+                <ns2:origen xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ORIGEN: Tokio</ns2:origen>
+                <ns2:destino xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">DESTINO: Mexico</ns2:destino>
+                <ns2:hora xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">HORA: 19:00</ns2:hora>
+                <ns2:fecha xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">FECHA: 12/10/2020</ns2:fecha>
+                <ns2:precio xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">PRECIO: 9000</ns2:precio>
+            </ns2:vuelos>
+        </ns2:BuscarVuelosResponse>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
