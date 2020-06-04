@@ -219,9 +219,9 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 **Datos que recibe**
 
-| **VARIABLE** |    **DESCRIPCION**     |
-| :----------: | :--------------------: |
-|  `idVuelo`   | *int* -> Numero Entero |
+| **VARIABLE** | **DESCRIPCION** |
+| :----------: | :-------------: |
+|              |                 |
 
 **Datos que devuelve**
 
