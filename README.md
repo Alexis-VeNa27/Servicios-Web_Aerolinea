@@ -1,4 +1,4 @@
-# **Aerolínea** ✈
+# **Aerolínea TC** ✈
 Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías Para La Integración De Soluciones" con el objetivo de aprender a utilizar los Servicios Web.
 
 ------
@@ -8,14 +8,18 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 **TABLA DE CONTENIDO** 📋
 
 > - [Link Del Servidor](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#link-del-servidor-)
-> - [Versión 1](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#versi%C3%B3n-1)
->   - [Mensajes Básicos Del Sistema](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#mensajes-b%C3%A1sicos-del-sistema-)
-> - [Versión 2](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#versi%C3%B3n-2)
->   - [Funcionalidades](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#funcionalidades-)
->   - [Modelo De Datos](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#modelo-de-datos-) 
-> - [Versión 3](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#versi%C3%B3n-3) 
->   - [Request & Response](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#request--response-)
->   - [Ejemplo De Peticiones Y Respuestas ](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#ejemplo-de-peticiones-y-respuestas-) 
+> - [Link De La Página Web]()
+> - [Mensajes Básicos Del Sistema]()
+> - [Funcionalidades]()
+> - [Modelo De Datos]() 
+> - [Soap]()
+>   - [Request & Response]()
+>   - [Ejemplo De Peticiones Y Respuestas ]() 
+> - [Rest]()
+>   - [URLs]()
+> - [Consumo]()
+>   - [Herramientas Utilizadas]()
+>   - [Pantallas Finales]()
 > - [Documentación](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#documentaci%C3%B3n) 
 >   - [Diagrama De Casos De Uso](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#diagrama-de-casos-de-uso-) 
 >   - [Diagrama De Actividad](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#diagrama-de-actividad-) 
@@ -34,7 +38,13 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 
 
-### `Versión 1`
+## *Link de la página web* 📱💻
+
+[Dale Click !!!](http://3.86.69.101/AerolineaTC/Inicio.html)
+
+------
+
+
 
 ## *Mensajes básicos del sistema* 📩
 
@@ -66,8 +76,6 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 
 
-### `Versión 2`
-
 ## *Funcionalidades* ✅❎
 
 - [x] Agregar Vuelo
@@ -82,7 +90,9 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 ------
 
-## *Modelo de datos* 🗂
+
+
+## *Modelo de datos* 📁
 
 - **Vuelo**
 
@@ -111,9 +121,12 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 
 
-### `Versión 3`
+## *Soap* 📬 
 
-## Request & Response 📥📤
+
+
+> ## **Request & Response** 📥📤
+>
 
 `Vuelo`
 
@@ -134,15 +147,11 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 | **VARIABLE** |                  **DESCRIPCION**                   |
 | :----------: | :------------------------------------------------: |
-|  `mensaje`   |         **Se agrego el siguiente vuelo:**          |
-|  `idVuelo`   |               *int* -> Numero Entero               |
-|   `origen`   |            *string* -> Ciudad De Origen            |
-|  `destino`   |           *string* -> Ciudad De Destino            |
-|    `hora`    |    *string* -> Hora Del Vuelo (Formato: 24 hrs)    |
-|   `fecha`    | *string* -> Fecha Del Vuelo (Formato: Dia/Mes/Año) |
-|   `precio`   |               *int* -> Numero Entero               |
+|  `mensaje`   | **Contiene información respecto a lo que sucedió** |
 
 ------
+
+
 
 - Mostrar Vuelo
 
@@ -156,15 +165,11 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 | **VARIABLE** |                  **DESCRIPCION**                   |
 | :----------: | :------------------------------------------------: |
-|  `mensaje`   |         **Datos del vuelo seleccionado:**          |
-|  `idVuelo`   |               *int* -> Numero Entero               |
-|   `origen`   |            *string* -> Ciudad De Origen            |
-|  `destino`   |           *string* -> Ciudad De Destino            |
-|    `hora`    |    *string* -> Hora Del Vuelo (Formato: 24 hrs)    |
-|   `fecha`    | *string* -> Fecha Del Vuelo (Formato: Dia/Mes/Año) |
-|   `precio`   |               *int* -> Numero Entero               |
+|  `mensaje`   | **Contiene información respecto a lo que sucedió** |
 
 ------
+
+
 
 - Modificar Vuelo 
 
@@ -183,37 +188,29 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 | **VARIABLE** |                  **DESCRIPCION**                   |
 | :----------: | :------------------------------------------------: |
-|  `mensaje`   | **Se modificaron los datos del siguiente vuelo:**  |
-|  `idVuelo`   |               *int* -> Numero Entero               |
-|   `origen`   |            *string* -> Ciudad De Origen            |
-|  `destino`   |           *string* -> Ciudad De Destino            |
-|    `hora`    |    *string* -> Hora Del Vuelo (Formato: 24 hrs)    |
-|   `fecha`    | *string* -> Fecha Del Vuelo (Formato: Dia/Mes/Año) |
-|   `precio`   |               *int* -> Numero Entero               |
+|  `mensaje`   | **Contiene información respecto a lo que sucedió** |
 
 ------
+
+
 
 - Eliminar Vuelo
 
 **Datos que recibe**
 
-| **VARIABLE** | **DESCRIPCION** |
-| :----------: | :-------------: |
-|              |                 |
+| **VARIABLE** |    **DESCRIPCION**     |
+| :----------: | :--------------------: |
+|  `idVuelo`   | *int* -> Numero Entero |
 
 **Datos que devuelve**
 
 | **VARIABLE** |                  **DESCRIPCION**                   |
 | :----------: | :------------------------------------------------: |
-|  `mensaje`   |           **Datos del vuelo eliminado:**           |
-|  `idVuelo`   |               *int* -> Numero Entero               |
-|   `origen`   |            *string* -> Ciudad De Origen            |
-|  `destino`   |           *string* -> Ciudad De Destino            |
-|    `hora`    |    *string* -> Hora Del Vuelo (Formato: 24 hrs)    |
-|   `fecha`    | *string* -> Fecha Del Vuelo (Formato: Dia/Mes/Año) |
-|   `precio`   |               *int* -> Numero Entero               |
+|  `mensaje`   | **Contiene información respecto a lo que sucedió** |
 
 ------
+
+
 
 - Buscar Vuelos
 
@@ -238,7 +235,11 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 ------
 
+
+
 `Compra`
+
+
 
 - Realizar Compra
 
@@ -254,16 +255,13 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 **Datos que devuelve**
 
-| **VARIABLE** |                   **DESCRIPCION**                    |
-| :----------: | :--------------------------------------------------: |
-|  `mensaje`   |          **Datos de la compra realizada:**           |
-|  `idCompra`  |                *int* -> Numero Entero                |
-|  `idVuelo`   |                *int* -> Numero Entero                |
-| `nomCliente` |            *string* -> Nombre Del Cliente            |
-| `metodoPago` |    *string* -> Forma De Pago (Efectivo o Tarjeta)    |
-|  `asiento`   | *string* -> Lugar De Asiento (Formato: Letra-Numero) |
+| **VARIABLE** |                  **DESCRIPCION**                   |
+| :----------: | :------------------------------------------------: |
+|  `mensaje`   | **Contiene información respecto a lo que sucedió** |
 
 ------
+
+
 
 - Mostrar Compra
 
@@ -275,16 +273,13 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 **Datos que devuelve**
 
-| **VARIABLE** |                   **DESCRIPCION**                    |
-| :----------: | :--------------------------------------------------: |
-|  `mensaje`   |         **Datos de la compra seleccionada:**         |
-|  `idCompra`  |                *int* -> Numero Entero                |
-|  `idVuelo`   |                *int* -> Numero Entero                |
-| `nomCliente` |            *string* -> Nombre Del Cliente            |
-| `metodoPago` |    *string* -> Forma De Pago (Efectivo o Tarjeta)    |
-|  `asiento`   | *string* -> Lugar De Asiento (Formato: Letra-Numero) |
+| **VARIABLE** |                  **DESCRIPCION**                   |
+| :----------: | :------------------------------------------------: |
+|  `mensaje`   | **Contiene información respecto a lo que sucedió** |
 
 ------
+
+
 
 - Modificar Compra
 
@@ -300,16 +295,13 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 **Datos que devuelve**
 
-| **VARIABLE** |                   **DESCRIPCION**                    |
-| :----------: | :--------------------------------------------------: |
-|  `mensaje`   | **Se modificaron los datos de la siguiente compra:** |
-|  `idCompra`  |                *int* -> Numero Entero                |
-|  `idVuelo`   |                *int* -> Numero Entero                |
-| `nomCliente` |            *string* -> Nombre Del Cliente            |
-| `metodoPago` |    *string* -> Forma De Pago (Efectivo o Tarjeta)    |
-|  `asiento`   | *string* -> Lugar De Asiento (Formato: Letra-Numero) |
+| **VARIABLE** |                  **DESCRIPCION**                   |
+| :----------: | :------------------------------------------------: |
+|  `mensaje`   | **Contiene información respecto a lo que sucedió** |
 
 ------
+
+
 
 - Cancelar Compra
 
@@ -321,18 +313,15 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 **Datos que devuelve**
 
-| **VARIABLE** |                   **DESCRIPCION**                    |
-| :----------: | :--------------------------------------------------: |
-|  `mensaje`   |          **Datos de la compra cancelada:**           |
-|  `idCompra`  |                *int* -> Numero Entero                |
-|  `idVuelo`   |                *int* -> Numero Entero                |
-| `nomCliente` |            *string* -> Nombre Del Cliente            |
-| `metodoPago` |    *string* -> Forma De Pago (Efectivo o Tarjeta)    |
-|  `asiento`   | *string* -> Lugar De Asiento (Formato: Letra-Numero) |
+| **VARIABLE** |          **DESCRIPCION**          |
+| :----------: | :-------------------------------: |
+|  `mensaje`   | **Datos de la compra cancelada:** |
 
 ------
 
-## Ejemplo de peticiones y respuestas 💬📝
+
+
+> ## **Ejemplo de peticiones y respuestas** 💬📝
 
 > ***VUELO***
 
@@ -358,14 +347,7 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
     <SOAP-ENV:Header/>
     <SOAP-ENV:Body>
         <ns2:AgregarVueloResponse xmlns:ns2="http://www.example.org/Aerolinea">
-            <ns2:mensaje xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Se agrego el siguiente vuelo: 
-</ns2:mensaje>
-            <ns2:idVuelo xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ID_VUELO: 80</ns2:idVuelo>
-            <ns2:origen xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ORIGEN: Mexico</ns2:origen>
-            <ns2:destino xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">DESTINO: Japon</ns2:destino>
-            <ns2:hora xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">HORA: 16:00</ns2:hora>
-            <ns2:fecha xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">FECHA: 10/09/2021</ns2:fecha>
-            <ns2:precio xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">PRECIO: 750</ns2:precio>
+            <ns2:mensaje xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Se agrego el vuelo con el ID: 80</ns2:mensaje>
         </ns2:AgregarVueloResponse>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
@@ -388,6 +370,8 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 ------
 
+
+
 `Mostrar Vuelo`
 
 ```xml
@@ -406,13 +390,13 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
     <SOAP-ENV:Body>
         <ns2:MostrarVueloResponse xmlns:ns2="http://www.example.org/Aerolinea">
             <ns2:mensaje xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Datos del vuelo seleccionado: 
+Id vuelo: 80
+Origen: Mexico
+Destino: Japon
+Hora: 16:00
+Fecha: 10/09/2021
+Precio: 750
 </ns2:mensaje>
-            <ns2:idVuelo xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ID_VUELO: 80</ns2:idVuelo>
-            <ns2:origen xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ORIGEN: Mexico</ns2:origen>
-            <ns2:destino xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">DESTINO: Japon</ns2:destino>
-            <ns2:hora xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">HORA: 16:00</ns2:hora>
-            <ns2:fecha xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">FECHA: 10/09/2021</ns2:fecha>
-            <ns2:precio xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">PRECIO: 750</ns2:precio>
         </ns2:MostrarVueloResponse>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
@@ -434,6 +418,8 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 ```
 
 ------
+
+
 
 `Modificar Vuelo`
 
@@ -457,14 +443,7 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
     <SOAP-ENV:Header/>
     <SOAP-ENV:Body>
         <ns2:ModificarVueloResponse xmlns:ns2="http://www.example.org/Aerolinea">
-            <ns2:mensaje xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Se modificaron los datos del siguiente vuelo: 
-</ns2:mensaje>
-            <ns2:idVuelo xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ID_VUELO: 80</ns2:idVuelo>
-            <ns2:origen xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ORIGEN: Mexico</ns2:origen>
-            <ns2:destino xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">DESTINO: China</ns2:destino>
-            <ns2:hora xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">HORA: 20:00</ns2:hora>
-            <ns2:fecha xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">FECHA: 15/11/2021</ns2:fecha>
-            <ns2:precio xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">PRECIO: 750</ns2:precio>
+            <ns2:mensaje xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Se modificaron los datos del vuelo con el ID: 80</ns2:mensaje>
         </ns2:ModificarVueloResponse>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
@@ -487,6 +466,8 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 ------
 
+
+
 `Eliminar Vuelo`
 
 ```xml
@@ -504,14 +485,7 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
     <SOAP-ENV:Header/>
     <SOAP-ENV:Body>
         <ns2:EliminarVueloResponse xmlns:ns2="http://www.example.org/Aerolinea">
-            <ns2:mensaje xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Datos del vuelo eliminado: 
-</ns2:mensaje>
-            <ns2:idVuelo xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ID_VUELO: 80</ns2:idVuelo>
-            <ns2:origen xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ORIGEN: Mexico</ns2:origen>
-            <ns2:destino xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">DESTINO: China</ns2:destino>
-            <ns2:hora xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">HORA: 20:00</ns2:hora>
-            <ns2:fecha xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">FECHA: 15/11/2021</ns2:fecha>
-            <ns2:precio xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">PRECIO: 750</ns2:precio>
+            <ns2:mensaje xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Se elimino exitosamente el vuelo con el ID: 80</ns2:mensaje>
         </ns2:EliminarVueloResponse>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
@@ -534,6 +508,8 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 ------
 
+
+
 `Buscar Vuelos`
 
 ```xml
@@ -550,20 +526,28 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
     <SOAP-ENV:Body>
         <ns2:BuscarVuelosResponse xmlns:ns2="http://www.example.org/Aerolinea">
             <ns2:vuelos>
-                <ns2:idVuelo xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ID_VUELO: 1</ns2:idVuelo>
-                <ns2:origen xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ORIGEN: Puebla</ns2:origen>
-                <ns2:destino xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">DESTINO: Guadalajara</ns2:destino>
-                <ns2:hora xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">HORA: 12:00</ns2:hora>
-                <ns2:fecha xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">FECHA: 2020-09-19</ns2:fecha>
-                <ns2:precio xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">PRECIO: 2000</ns2:precio>
+                <ns2:idVuelo xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:int">10</ns2:idVuelo>
+                <ns2:origen xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Tokio</ns2:origen>
+                <ns2:destino xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Uruguay</ns2:destino>
+                <ns2:hora xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">16:00</ns2:hora>
+                <ns2:fecha xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">10/09/2021</ns2:fecha>
+                <ns2:precio xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:int">750</ns2:precio>
             </ns2:vuelos>
             <ns2:vuelos>
-                <ns2:idVuelo xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ID_VUELO: 2</ns2:idVuelo>
-                <ns2:origen xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ORIGEN: Tokio</ns2:origen>
-                <ns2:destino xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">DESTINO: Mexico</ns2:destino>
-                <ns2:hora xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">HORA: 19:00</ns2:hora>
-                <ns2:fecha xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">FECHA: 12/10/2020</ns2:fecha>
-                <ns2:precio xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">PRECIO: 9000</ns2:precio>
+                <ns2:idVuelo xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:int">25</ns2:idVuelo>
+                <ns2:origen xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">China</ns2:origen>
+                <ns2:destino xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Peru</ns2:destino>
+                <ns2:hora xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">16:00</ns2:hora>
+                <ns2:fecha xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">10/09/2021</ns2:fecha>
+                <ns2:precio xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:int">750</ns2:precio>
+            </ns2:vuelos>
+            <ns2:vuelos>
+                <ns2:idVuelo xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:int">80</ns2:idVuelo>
+                <ns2:origen xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Mexico</ns2:origen>
+                <ns2:destino xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Japon</ns2:destino>
+                <ns2:hora xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">16:00</ns2:hora>
+                <ns2:fecha xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">10/09/2021</ns2:fecha>
+                <ns2:precio xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:int">750</ns2:precio>
             </ns2:vuelos>
         </ns2:BuscarVuelosResponse>
     </SOAP-ENV:Body>
@@ -571,6 +555,8 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 ```
 
 ------
+
+
 
 > ***COMPRA***
 
@@ -595,13 +581,7 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
     <SOAP-ENV:Header/>
     <SOAP-ENV:Body>
         <ns2:RealizarCompraResponse xmlns:ns2="http://www.example.org/Aerolinea">
-            <ns2:mensaje xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Datos de la compra realizada: 
-</ns2:mensaje>
-            <ns2:idCompra xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ID_COMPRA: 35</ns2:idCompra>
-            <ns2:idVuelo xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ID_VUELO: 80</ns2:idVuelo>
-            <ns2:nomCliente xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">NOMBRE CLIENTE: Heisenberg</ns2:nomCliente>
-            <ns2:metodoPago xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">METODO PAGO: Efectivo</ns2:metodoPago>
-            <ns2:asiento xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ASIENTO: A-15</ns2:asiento>
+            <ns2:mensaje xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Se realizó la compra con el ID: 35</ns2:mensaje>
         </ns2:RealizarCompraResponse>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
@@ -639,6 +619,8 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 ------
 
+
+
 `Mostrar Compra`
 
 ```xml
@@ -657,12 +639,12 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
     <SOAP-ENV:Body>
         <ns2:MostrarCompraResponse xmlns:ns2="http://www.example.org/Aerolinea">
             <ns2:mensaje xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Datos de la compra seleccionada: 
+Id compra: 35
+Id vuelo: 80
+Nombre cliente: Heisenberg
+Método pago: Efectivo
+Asiento: A-15
 </ns2:mensaje>
-            <ns2:idCompra xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ID_COMPRA: 35</ns2:idCompra>
-            <ns2:idVuelo xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ID_VUELO: 80</ns2:idVuelo>
-            <ns2:nomCliente xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">NOMBRE CLIENTE: Heisenberg</ns2:nomCliente>
-            <ns2:metodoPago xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">METODO PAGO: Efectivo</ns2:metodoPago>
-            <ns2:asiento xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ASIENTO: A-15</ns2:asiento>
         </ns2:MostrarCompraResponse>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
@@ -685,6 +667,8 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 ------
 
+
+
 `Modificar Compra`
 
 ```xml
@@ -706,13 +690,7 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
     <SOAP-ENV:Header/>
     <SOAP-ENV:Body>
         <ns2:ModificarCompraResponse xmlns:ns2="http://www.example.org/Aerolinea">
-            <ns2:mensaje xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Se modificaron los datos de la siguiente compra: 
-</ns2:mensaje>
-            <ns2:idCompra xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ID_COMPRA: 35</ns2:idCompra>
-            <ns2:idVuelo xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ID_VUELO: 80</ns2:idVuelo>
-            <ns2:nomCliente xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">NOMBRE CLIENTE: Heisenberg</ns2:nomCliente>
-            <ns2:metodoPago xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">METODO PAGO: Tarjeta</ns2:metodoPago>
-            <ns2:asiento xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ASIENTO: B-15</ns2:asiento>
+            <ns2:mensaje xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Se modificaron los datos de la compra con el ID: 35</ns2:mensaje>
         </ns2:ModificarCompraResponse>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
@@ -750,6 +728,8 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 ------
 
+
+
 `Cancelar Compra`
 
 ```xml
@@ -767,13 +747,7 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
     <SOAP-ENV:Header/>
     <SOAP-ENV:Body>
         <ns2:CancelarCompraResponse xmlns:ns2="http://www.example.org/Aerolinea">
-            <ns2:mensaje xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Datos de la compra cancelada: 
-</ns2:mensaje>
-            <ns2:idCompra xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ID_COMPRA: 35</ns2:idCompra>
-            <ns2:idVuelo xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ID_VUELO: 80</ns2:idVuelo>
-            <ns2:nomCliente xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">NOMBRE CLIENTE: Heisenber</ns2:nomCliente>
-            <ns2:metodoPago xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">METODO PAGO: Tarjeta</ns2:metodoPago>
-            <ns2:asiento xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ASIENTO: B-15</ns2:asiento>
+            <ns2:mensaje xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Se cancelo exitosamente la compra con el ID: 35</ns2:mensaje>
         </ns2:CancelarCompraResponse>
     </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
@@ -798,9 +772,134 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 
 
-### `Documentación`
+## *Rest* ⛓️
 
-## **Diagrama de casos de uso** 👥
+
+
+> ## **URLs** 🔗
+
+> ***VUELO***
+
+`Agregar Vuelo` ➡️ *Agrega un vuelo a la Aerolínea TC*
+
+- `POST`	***/rest/vuelos/***
+
+
+
+`Mostrar Vuelo` ➡️ *Muestra un vuelo de la Aerolínea TC*
+
+- `GET`	***/rest/vuelos/{idVuelo}***
+
+
+
+`Modificar Vuelo` ➡️ *Modifica un vuelo de la Aerolínea TC*
+
+- `PUT`	***/rest/vuelos/***
+
+
+
+`Eliminar Vuelo` ➡️ *Elimina un vuelo de la Aerolínea TC*
+
+- `DELETE`	***/rest/vuelos/{idVuelo}***
+
+
+
+`Buscar Vuelos` ➡️ *Devuelve una lista de los vuelos que pertenecen a la Aerolínea TC*
+
+- `GET` ***/rest/vuelos/***
+
+
+
+------
+
+
+
+> ***COMPRA***
+
+`Realizar Compra` ➡️ *Realiza una compra a la Aerolínea TC*
+
+- `POST`	***/rest/compras/***
+
+
+
+`Mostrar Compra` ➡️ *Muestra una compra que se realizo a la Aerolínea TC*
+
+- `GET`	***/rest/compras/{idCompra}***
+
+
+
+`Modificar Compra` ➡️ *Modifica una compra que se realizo a la Aerolínea TC*
+
+- `PUT`	***/rest/compras/***
+
+
+
+`Cancelar Compra` ➡️ *Cancela una compra que se realizo a la Aerolínea TC*
+
+- `DELETE`	***/rest/Compras/{idCompra}***
+
+
+
+## *Consumo* 👩🏻‍💻👨🏻‍💻
+
+
+
+Este es el consumo final de **SOAP** y **REST** de la **Aerolínea TC**, fue codificado en el editor **Visual Studio Code** y probado en el navegador **Microsoft Edge**.  
+
+
+
+> ## **Herramientas Utilizadas** ⚙️
+
+*El proyecto fue implementado con la ayuda de las siguientes herramientas:*
+
+- `HTML`	
+- `PHP`
+- `CSS`
+- `JAVASCRIPT`
+- `AJAX`
+- `BOOTSTRAP`
+- `JQUERY`
+- `SWEETALERT2`
+- `APACHE`
+
+
+
+> ## **Pantallas Finales** 🛫🗺️
+
+*A continuación se muestran algunas capturas de pantalla del consumo de Aerolínea TC*
+
+
+
+`Pagina De Inicio:`
+
+![](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/Diagramas_Aerolinea/AerolineaTcInicio.png?raw=true)
+
+
+
+`Servicios:`
+
+![](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/Diagramas_Aerolinea/AerolineaTcServicio.png?raw=true)
+
+
+
+`Vuelos:`
+
+![](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/Diagramas_Aerolinea/AerolineaTcVuelo.png?raw=true)
+
+
+
+`Compras:`
+
+![](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/Diagramas_Aerolinea/AerolineaTcCompra.png?raw=true)
+
+
+
+## *Documentación* 🗂️
+
+
+
+> ## **Diagrama de casos de uso** 👥
+>
 
 
 
@@ -810,7 +909,8 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 ------
 
-## **Diagrama de actividad** 📌
+> ## **Diagrama de actividad** 📌
+>
 
 
 
@@ -820,7 +920,8 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 ------
 
-## **Diagrama de componentes** 🗃
+> ## **Diagrama de componentes** 🗃
+>
 
 
 
@@ -830,7 +931,8 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 ------
 
-## **Diagrama de clases** 📂
+> ## **Diagrama de clases** 📂
+>
 
 
 
@@ -840,7 +942,8 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 ------
 
-## **Diagrama de secuencia** 📈
+> ## **Diagrama de secuencia** 📈
+>
 
 
 
