@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Compras</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/AerolineaWS.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="style.css" rel="stylesheet" />
+        <!--- Animaciones de SweetAlert2 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="Inicio.html">Aerolínea TC</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Inicio.html#about">Acerca De</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Inicio.html#projects">Servicio</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Inicio.html#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">Aerolínea TC</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Su nueva opción, su mejor opción.</h2>                      
+                    <input type="button" class="btn btn-primary js-scroll-trigger" name="enviar" value="Consultar Vuelos" href="javascript:;" onclick="funcionConsultarVuelos()">                    
+                </div>
+            </div>
+        </header>
+
+        <!-- Mostrar Vuelos Aerolinea TC-->
+        <section class="about-section text-center" id="opcCompra">
+            <div class="container">                                
+                <div class="table-responsive">                    
+                    <table class="table table-striped table-dark table-hover" id="tablaVuelos"></table>                    
+                </div>
+                <p></p>      
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <a class="btn btn-primary js-scroll-trigger" href="#realizar-compra">Realizar Compra</a>
+                        <a class="btn btn-primary js-scroll-trigger" href="#mostrar-compra">Mostrar Compra</a>
+                        <p></p>      
+                        <a class="btn btn-primary js-scroll-trigger" href="#modificar-compra">Modificar Compra</a>
+                        <a class="btn btn-primary js-scroll-trigger" href="#cancelar-compra">Cancelar Compra</a>
+                        <p></p>      
+                    </div>
+                </div>                
+            </div>
+        </section>                
+        <!-- Opciones Compra-->
+        <section class="projects-section bg-light">
+            <div class="container">
+                <!-- Realizar Compra-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5" id="realizar-compra">             
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Realizar Compra</h4>                            
+                            <form class="text-black-50 mb-0" method="GET">                        
+                                <input type="number" name="idCompra" id="idCompraAdd" placeholder="Id de la compra">
+                                <input type="number" name="idVuelo" id="idVueloAdd" placeholder="Id del vuelo">
+                                <input type="text" name="nomCliente" id="nomClienteAdd" placeholder="Nombre del cliente">
+                                <select class="text-black-50 mb-0" name="metodoPago" id="metodoPagoAdd">
+                                    <option selected>Método de pago</option>
+                                    <option value="Efectivo">Efectivo</option>
+                                    <option value="Tarjeta De Crédito">Tarjeta De Crédito</option>
+                                </select><br>   
+                                Asiento:
+                                <select class="text-black-50 mb-0" name="asientoColumna" id="asientoAddC">
+                                    <option selected>Columna</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                    <option value="E">E</option>
+                                    <option value="F">F</option>
+                                </select>  
+                                -
+                                <select class="text-black-50 mb-0" name="asientoFila" id="asientoAddF">
+                                    <option selected>Fila</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                </select>                                                                        
+                                <p></p>                                
+                                <input type="button" class="btn btn-primary js-scroll-trigger" name="enviar" value="Realizar Compra" href="javascript:;" onclick="funcionRealizarCompra($('#idCompraAdd').val(), $('#idVueloAdd').val(), $('#nomClienteAdd').val(), $('#metodoPagoAdd').val(), $('#asientoAddC').val(), $('#asientoAddF').val());">
+                                <p></p>
+                                <input type="reset" class="btn btn-primary js-scroll-trigger" value="Limpiar Campos">
+                            </form>
+                        </div>
+                    </div>
+                </div>     
+                <!-- Mostrar Compra-->                
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5" id="mostrar-compra">             
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Mostrar Compra</h4>
+                            <form class="text-black-50 mb-0" method="GET">                        
+                                <input type="number" name="idCompra" id="idCompraShow" placeholder="Id de la compra">
+                                <p></p>                                
+                                <input type="button" class="btn btn-primary js-scroll-trigger" name="enviar" value="Mostrar Compra" href="javascript:;" onclick="funcionMostrarCompra($('#idCompraShow').val());">
+                                <p></p>
+                                <input type="reset" class="btn btn-primary js-scroll-trigger" value="Limpiar Campos">
+                            </form>
+                        </div>
+                    </div>
+                </div>     
+                <!-- Modificar Compra-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5" id="modificar-compra">             
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Modificar Compra</h4>
+                            <form class="text-black-50 mb-0" method="GET">                        
+                                <input type="number" name="idCompra" id="idCompraUpd" placeholder="Id de la compra">
+                                <input type="number" name="idVuelo" id="idVueloUpd" placeholder="Id del vuelo">
+                                <input type="text" name="nomCliente" id="nomClienteUpd" placeholder="Nombre del cliente">
+                                <select class="text-black-50 mb-0" name="metodoPago" id="metodoPagoUpd">
+                                    <option selected>Método de pago</option>
+                                    <option value="Efectivo">Efectivo</option>
+                                    <option value="Tarjeta De Crédito">Tarjeta De Crédito</option>
+                                </select><br>   
+                                Asiento:
+                                <select class="text-black-50 mb-0" name="asientoColumna" id="asientoUpdC">
+                                    <option selected>Columna</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                    <option value="E">E</option>
+                                    <option value="F">F</option>
+                                </select>  
+                                -
+                                <select class="text-black-50 mb-0" name="asientoFila" id="asientoUpdF">
+                                    <option selected>Fila</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                </select>                                                                                                                    
+                                <p></p>                                
+                                <input type="button" class="btn btn-primary js-scroll-trigger" name="enviar" value="Modificar Compra" href="javascript:;" onclick="funcionModificarCompra($('#idCompraUpd').val(), $('#idVueloUpd').val(), $('#nomClienteUpd').val(), $('#metodoPagoUpd').val(), $('#asientoUpdC').val(), $('#asientoUpdF').val());">
+                                <p></p>
+                                <input type="reset" class="btn btn-primary js-scroll-trigger" value="Limpiar Campos">
+                            </form>
+                        </div>
+                    </div>
+                </div>      
+                <!-- Cancelar Compra-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5" id="cancelar-compra">             
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Cancelar Compra</h4>
+                            <form class="text-black-50 mb-0" method="GET">                        
+                                <input type="number" name="idCompra" id="idCompraDel" placeholder="Id de la compra" required>                                
+                                <p></p>                                
+                                <input type="button" class="btn btn-primary js-scroll-trigger" name="enviar" value="Cancelar Compra" href="javascript:;" onclick="funcionCancelarCompra($('#idCompraDel').val());">
+                                <p></p>
+                                <input type="reset" class="btn btn-primary js-scroll-trigger" value="Limpiar Campos">
+                            </form>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+        </section>      
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Aerolínea TC 2020</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>        
+        <!--- Ejemplo de usar SweetAlert2 y la llamada a jquery -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script>
+            function funcionConsultarVuelos() {
+                var parametros = {};
+                $.ajax({
+                    data: parametros,                
+                    url: 'php/ConsultarVuelos.php',
+                    type: 'get',                
+                    success: function (response) {                        
+                        $("#tablaVuelos").html(response);                        
+                    }
+                });
+            }       
+
+            function funcionRealizarCompra(a,b,c,d,e,f) {
+                var parametros = { "idCompra": a, "idVuelo": b, "nomCliente": c, "metodoPago": d, "asientoColumna": e, "asientoFila": f};
+                $.ajax({
+                    data: parametros,                
+                    url: 'php/RealizarCompra.php',
+                    type: 'get',                
+                    success: function (response) {                    
+                        Swal.fire({
+                            title: '¡ Vuelos TC !',
+                            text: response,
+                            icon: 'info',
+                            timer: 10000,
+                            timerProgressBar: true,
+                            showClass: {
+                                popup: 'animate__animated animate__fadeInDown'                                
+                            },
+                            hideClass: {
+                                popup: 'animate__animated animate__fadeOutUp'
+                            }
+                        });                    
+                    }
+                });
+            }            
+
+            function funcionMostrarCompra(a) {
+                var parametros = { "idCompra": a};
+                $.ajax({
+                    data: parametros,                
+                    url: 'php/MostrarCompra.php',
+                    type: 'get',                
+                    success: function (response) {                        
+                        Swal.fire({
+                            title: '¡ Vuelos TC !',
+                            text: response,
+                            icon: 'info',
+                            timer: 10000,
+                            timerProgressBar: true,
+                            showClass: {
+                                popup: 'animate__animated animate__fadeInDown'                                
+                            },
+                            hideClass: {
+                                popup: 'animate__animated animate__fadeOutUp'
+                            }
+                        });
+                    }
+                });
+            }
+
+            function funcionModificarCompra(a,b,c,d,e,f) {
+                var parametros = { "idCompra": a, "idVuelo": b, "nomCliente": c, "metodoPago": d, "asientoColumna": e, "asientoFila": f};
+                $.ajax({
+                    data: parametros,                
+                    url: 'php/ModificarCompra.php',
+                    type: 'get',                
+                    success: function (response) {                        
+                        Swal.fire({
+                            title: '¡ Vuelos TC !',
+                            text: response,
+                            icon: 'info',
+                            timer: 10000,
+                            timerProgressBar: true,
+                            showClass: {
+                                popup: 'animate__animated animate__fadeInDown'                                
+                            },
+                            hideClass: {
+                                popup: 'animate__animated animate__fadeOutUp'
+                            }
+                        });                    
+                    }
+                });
+            }
+
+            function funcionCancelarCompra(a) {
+                var parametros = { "idCompra": a};
+                $.ajax({
+                    data: parametros,                
+                    url: 'php/CancelarCompra.php',                    
+                    type: 'get',                                    
+                    success: function (response) {                        
+                        Swal.fire({
+                            title: '¡ Vuelos TC !',
+                            text: response,
+                            icon: 'info',
+                            timer: 10000,
+                            timerProgressBar: true,
+                            showClass: {
+                                popup: 'animate__animated animate__fadeInDown'                                
+                            },
+                            hideClass: {
+                                popup: 'animate__animated animate__fadeOutUp'
+                            }
+                        });
+                    }
+                });
+            }
+        </script>      
+    </body>
+</html>
