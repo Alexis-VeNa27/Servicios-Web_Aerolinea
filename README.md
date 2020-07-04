@@ -1,32 +1,32 @@
 # **Aerolínea TC** ✈
+
 Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías Para La Integración De Soluciones" con el objetivo de aprender a utilizar los Servicios Web.
 
 ------
 
-
+[https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#pantallas-finales-%EF%B8%8F](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#pantallas-finales-️)
 
 **TABLA DE CONTENIDO** 📋
 
 > - [Link Del Servidor](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#link-del-servidor-)
-> - [Link De La Página Web]([https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#link-de-la-p%C3%A1gina-web-](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#link-de-la-página-web-))
-> - [Mensajes Básicos Del Sistema]([https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#mensajes-b%C3%A1sicos-del-sistema-](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#mensajes-básicos-del-sistema-))
+> - [Link De La Página Web](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#link-de-la-página-web-)
+> - [Mensajes Básicos Del Sistema](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#mensajes-básicos-del-sistema-)
 > - [Funcionalidades](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#funcionalidades-)
 > - [Modelo De Datos](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#modelo-de-datos-) 
 > - [Soap](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#soap-)
->   - [Request & Response](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#soap-)
+>   - [Request & Response](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#request--response-)
 >   - [Ejemplo De Peticiones Y Respuestas ](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#ejemplo-de-peticiones-y-respuestas-) 
-> - [Rest]([https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#rest-%EF%B8%8F](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#rest-️))
+> - [Rest](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#rest-️)
 >   - [URLs](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#urls-)
 > - [Consumo](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#consumo-)
->   - [Herramientas Utilizadas]([https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#herramientas-utilizadas-%EF%B8%8F](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#herramientas-utilizadas-️))
->   - [Pantallas Finales]([https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#pantallas-finales-%EF%B8%8F](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#pantallas-finales-️))
+>   - [Herramientas Utilizadas](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#herramientas-utilizadas-️)
+>   - [Pantallas Finales](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#pantallas-finales-️)
 > - [Documentación]([https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#documentaci%C3%B3n-%EF%B8%8F](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#documentación-️)) 
 >   - [Diagrama De Casos De Uso](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea/blob/master/README.md#diagrama-de-casos-de-uso-) 
 >   - [Diagrama De Actividad](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#diagrama-de-actividad-) 
 >   - [Diagrama De Componentes](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#diagrama-de-componentes-) 
 >   - [Diagrama De Clases](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#diagrama-de-clases-) 
 >   - [Diagrama De Secuencia](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#diagrama-de-secuencia-) 
->
 
 
 
@@ -109,13 +109,13 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 - **Compra**
 
-| **ATRIBUTO** | **TIPO DE DATO** |
-| :--------:   | :---------------: |
-|   Id_compra   |      `int (11) PRIMARY KEY`      |
-|   id_vuelof   | `int (11) FOREIGN KEY` |
-|  nom_cliente  | `varchar (255)` |
-|  metodo_pago  | `varchar (255)` |
-|   asiento    | `varchar (255)` |
+| **ATRIBUTO** |    **TIPO DE DATO**    |
+| :----------: | :--------------------: |
+|  Id_compra   | `int (11) PRIMARY KEY` |
+|  id_vuelof   | `int (11) FOREIGN KEY` |
+| nom_cliente  |    `varchar (255)`     |
+| metodo_pago  |    `varchar (255)`     |
+|   asiento    |    `varchar (255)`     |
 
 ------
 
@@ -126,7 +126,6 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 
 > ## **Request & Response** 📥📤
->
 
 `Vuelo`
 
@@ -866,7 +865,7 @@ Este es el consumo final de **SOAP** y **REST** de la **Aerolínea TC**, fue cod
 
 > ## **Pantallas Finales** 🛫🗺️
 
-*A continuación se muestran algunas capturas de pantalla del consumo de Aerolínea TC*
+*A continuación se muestran algunas capturas de pantalla del consumo de la Aerolínea TC*
 
 
 
@@ -899,7 +898,6 @@ Este es el consumo final de **SOAP** y **REST** de la **Aerolínea TC**, fue cod
 
 
 > ## **Diagrama de casos de uso** 👥
->
 
 
 
@@ -910,7 +908,6 @@ Este es el consumo final de **SOAP** y **REST** de la **Aerolínea TC**, fue cod
 ------
 
 > ## **Diagrama de actividad** 📌
->
 
 
 
@@ -921,7 +918,6 @@ Este es el consumo final de **SOAP** y **REST** de la **Aerolínea TC**, fue cod
 ------
 
 > ## **Diagrama de componentes** 🗃
->
 
 
 
@@ -932,7 +928,6 @@ Este es el consumo final de **SOAP** y **REST** de la **Aerolínea TC**, fue cod
 ------
 
 > ## **Diagrama de clases** 📂
->
 
 
 
@@ -943,7 +938,6 @@ Este es el consumo final de **SOAP** y **REST** de la **Aerolínea TC**, fue cod
 ------
 
 > ## **Diagrama de secuencia** 📈
->
 
 
 
