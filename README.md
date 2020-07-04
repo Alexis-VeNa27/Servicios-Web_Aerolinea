@@ -1,10 +1,9 @@
 # **Aerolínea TC** ✈
-
 Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías Para La Integración De Soluciones" con el objetivo de aprender a utilizar los Servicios Web.
 
 ------
 
-[https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#pantallas-finales-%EF%B8%8F](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#pantallas-finales-️)
+
 
 **TABLA DE CONTENIDO** 📋
 
@@ -27,6 +26,7 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 >   - [Diagrama De Componentes](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#diagrama-de-componentes-) 
 >   - [Diagrama De Clases](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#diagrama-de-clases-) 
 >   - [Diagrama De Secuencia](https://github.com/Alexis-VeNa27/Servicios-Web_Aerolinea#diagrama-de-secuencia-) 
+>
 
 
 
@@ -109,13 +109,13 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 - **Compra**
 
-| **ATRIBUTO** |    **TIPO DE DATO**    |
-| :----------: | :--------------------: |
-|  Id_compra   | `int (11) PRIMARY KEY` |
-|  id_vuelof   | `int (11) FOREIGN KEY` |
-| nom_cliente  |    `varchar (255)`     |
-| metodo_pago  |    `varchar (255)`     |
-|   asiento    |    `varchar (255)`     |
+| **ATRIBUTO** | **TIPO DE DATO** |
+| :--------:   | :---------------: |
+|   Id_compra   |      `int (11) PRIMARY KEY`      |
+|   id_vuelof   | `int (11) FOREIGN KEY` |
+|  nom_cliente  | `varchar (255)` |
+|  metodo_pago  | `varchar (255)` |
+|   asiento    | `varchar (255)` |
 
 ------
 
@@ -126,6 +126,7 @@ Este proyecto esta siendo desarrollado en la Experiencia Educativa "Tecnologías
 
 
 > ## **Request & Response** 📥📤
+>
 
 `Vuelo`
 
@@ -898,6 +899,7 @@ Este es el consumo final de **SOAP** y **REST** de la **Aerolínea TC**, fue cod
 
 
 > ## **Diagrama de casos de uso** 👥
+>
 
 
 
@@ -908,6 +910,7 @@ Este es el consumo final de **SOAP** y **REST** de la **Aerolínea TC**, fue cod
 ------
 
 > ## **Diagrama de actividad** 📌
+>
 
 
 
@@ -918,6 +921,7 @@ Este es el consumo final de **SOAP** y **REST** de la **Aerolínea TC**, fue cod
 ------
 
 > ## **Diagrama de componentes** 🗃
+>
 
 
 
@@ -928,6 +932,7 @@ Este es el consumo final de **SOAP** y **REST** de la **Aerolínea TC**, fue cod
 ------
 
 > ## **Diagrama de clases** 📂
+>
 
 
 
@@ -938,6 +943,7 @@ Este es el consumo final de **SOAP** y **REST** de la **Aerolínea TC**, fue cod
 ------
 
 > ## **Diagrama de secuencia** 📈
+>
 
 
 
